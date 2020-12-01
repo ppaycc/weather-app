@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Weather</title>
+</head>
+
+<body> 
+
+  
+ <div class="container">
+
+	<div class="card-weather">
+
+
+
+		<div class="header">
+			<button class="favorite"><img src="img/menu.png" alt=""></button>
+			<input type="text" placeholder="Input other city">
+			<button class="get"><img src="img/search.png" alt=""></button>
+		</div>
+
+
+
+		<div class="card-weather-main">
+
+
+			<h3 class="city">-----</h3>
+			<div class="wrapper-cel-img">
+				<span class="grid-child"><span class="сelsius">-</span><span>&deg;</span></span>
+			<canvas id="icon" width="100" height="100"></canvas>
+			<div class="img grid-child"></div>
+			</div>
+			<div class="description">Clear sky</div>
+			<div class="feel">feel's like: <span class="feels-like">-</span>&deg;</div>
+			<div class="warning">
+				<p class="warning-message">I couldn't get your location. Turn on your location or use search, please </p>
+			</div>
+			<div class="not-found">
+			</div>
+		</div>
+
+		<div class="subtitle">
+			<div class="block">
+				<img src="img/sunrise.png" alt="">
+				<span class="sunrise">----</span>
+			</div>
+			<div class="block">
+				<img src="img/bar.png" alt="">
+				<span class="pressure">---</span>
+			</div>
+			<div class="block">
+				<img src="img/wind.png" alt="">
+				<span class="wind">---</span>
+			</div>
+			<div class="block">
+				<img src="img/sunset.png" alt="">
+				<span class="sunset">----</span>
+			</div>
+		</div>
+
+		<div class="card-weather-other">
+			<div class="card-day">
+				<div class="card-day-text">
+					<p class="date">--- -</p>
+					<p class="week-day">-----</p>
+				</div>
+				<div class="card-day-img">-</div>
+				<div class="card-day-celsius"><span class="day-celsius">-</span></div>
+			</div>
+			<div class="card-day">
+				<div class="card-day-text">
+					<p class="date">--- -</p>
+					<p class="week-day">-----</p>
+				</div>
+				<div class="card-day-img">-</div>
+				<div class="card-day-celsius"><span class="day-celsius">-</span></div>
+			</div>
+			<div class="card-day">
+				<div class="card-day-text">
+					<p class="date">--- -</p>
+					<p class="week-day">-----</p>
+				</div>
+				<div class="card-day-img">-</div>
+				<div class="card-day-celsius"><span class="day-celsius">-</span></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+  <div class="loading">
+	  <div class="load-wrapper">
+    <div class="cssload-loader">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
+    </div>
+  </div>
+</div>
+ </div>
+ 	<script src="skycons.js"></script>
+  <script src="App.js"></script>
+</body>
+
+</html>
